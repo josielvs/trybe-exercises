@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#hash para comentar
+
 echo 'Hello my first script!'
 
 VARIAVEL=`whoami`
