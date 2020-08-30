@@ -8,7 +8,7 @@ for (let i = 0; i < numbers.length; i++) {
 result = result / numbers.length;
 
 if (result > 20) {
-  console.log('valor maior que 20');
+  console.log('Valor maior que 20, valor: ' + result);
 } else {
-  console.log('valor menor ou igual a 20');
+  console.log('Valor menor ou igual a 20');
 }
