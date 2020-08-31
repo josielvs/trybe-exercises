@@ -27,4 +27,5 @@ if (baseSalary <= 1903.98) {
   aliquotIR = baseSalary * 0.275 - 869.36;
 };
 
+
 console.log("Salário: " + (baseSalary - aliquotIR));
