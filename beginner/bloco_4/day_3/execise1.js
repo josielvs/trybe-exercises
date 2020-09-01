@@ -1,4 +1,4 @@
-let n = 5;
+let n = 20;
 let lineItems;
 let asterix = '*';
 let line = '';

@@ -1,4 +1,4 @@
-let n = 10;
+let n = 20;
 let lineItems;
 let asterix = '*';
 let space = ' '
