@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE</title>
+</head>
+
+<body>
+<div class="divEstatica">
+</div>
+</body>
+<script>
+    const divStatic = document.querySelector('.divEstatica')
+
+    const dynamicH1 = document.createElement('h1')
+        dynamicH1.innerHTML = 'H1 carregando ANTES da Tag script!'
+        divStatic.appendChild(dynamicH1)
+
+    const divBeforeLoad = document.createElement('div')
+      divBeforeLoad.className = 'before-div'
+      divBeforeLoad.innerHTML = 'Div carregando ANTES da Tag script!'
+      divStatic.appendChild(divBeforeLoad)
+
+    const divAfterLoad = document.createElement('div')
+      divAfterLoad.className = 'center-content'
+      divAfterLoad.innerHTML = 'Div carregando DEPOIS da Tag script!'
+      document.body.appendChild(divAfterLoad)
+  </script>
+</html>
