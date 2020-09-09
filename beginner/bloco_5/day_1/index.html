@@ -61,9 +61,25 @@
         let yellowForGreen = document.getElementsByClassName('main-content')[0]
         yellowForGreen.style.background = "rgb(76,164,109)"
       }
-      squareToGreen();
+      squareToGreen()
 
+      function squareToWhite() {
+        let redForWhite = document.getElementsByClassName('center-content')[0]
+        redForWhite.style.background = "rgb(255,255,255)"
+      }
+      squareToWhite()
 
+      function headCorrect(){
+        let nameCorrection = document.getElementsByTagName('h1')[0]
+        nameCorrection.innerText = 'Exercício 5.1 - JavaScript'
+      }
+      headCorrect()
+
+      function upperCaseP(){
+        let pUppers = document.getElementsByTagName('p')[0]
+        pUppers.innerHTML = pUppers.innerHTML.toUpperCase()
+      }
+      upperCaseP()
     </script>
   </body>
 </html>
