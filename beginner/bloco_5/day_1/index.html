@@ -80,6 +80,15 @@
         pUppers.innerHTML = pUppers.innerHTML.toUpperCase()
       }
       upperCaseP()
+
+      function showtagsPs(){
+        let tags = document.getElementsByTagName('p')
+        for (let i = 0; i < tags.length; i += 1) {
+          window.console.log(tags[i].innerHTML)
+        }
+      }
+      showtagsPs()
+
     </script>
   </body>
 </html>
