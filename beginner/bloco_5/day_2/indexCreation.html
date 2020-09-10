@@ -74,8 +74,8 @@
       divClassMain.appendChild(divClassCenter)
       
       // Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
-      const tagPChild = document.createElement('p');
-      tagPChild.innerHTML = 'Meu texto inserido dinamicamente! JS é vida! hehehe';
+      const tagPChild = document.createElement('p')
+      tagPChild.innerHTML = 'Meu texto inserido dinamicamente! JS é vida! hehehe'
       divClassMain.appendChild(tagPChild);
 
       // Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
@@ -95,22 +95,21 @@
       divClassLeft.appendChild(tagImgSmall)
 
       // Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, ... como valores da lista. Essa lista deve ser filha do div criado no passo 6;
-      const tagUl = document.createElement('ul');
+      const tagUl = document.createElement('ul')
       divClassRight.appendChild(tagUl);
       const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']
       for (let num in arrayNumbers) {
-        const tagLi = document.createElement('li');
-        tagLi.innerHTML = arrayNumbers[num];
-        tagUl.appendChild(tagLi);
+        const tagLi = document.createElement('li')
+        tagLi.innerHTML = arrayNumbers[num]
+        tagUl.appendChild(tagLi)
       }
 
       // Adicione 3 tags h3, todas sendo filhas do div criado no passo 2.
-      for (let index = 1; index <= 3; index++) {
-        const tagsH3 = document.createElement('h3');
+      for (let index = 1; index <= 3; index += 1) {
+        const tagsH3 = document.createElement('h3')
         tagsH3.innerHTML = 'Tag H3: ' + index;
-        divClassMain.appendChild(tagsH3);
+        divClassMain.appendChild(tagsH3)
       }
-
     </script>
   </body>
 </html>
