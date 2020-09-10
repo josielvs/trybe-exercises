@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <h1>Mad Libs</h1>
+    <div class="title-div"></div>
+    <ul>
+     <li>Personagem 1: <input type="text" id="noun">
+     <li>Personagem 2: <input type="text" id="adjective">
+     <li>Personagem 3: <input type="text" id="person">
+    </ul>
+    
+    <button id="lib-button">Lib it!</button>
+     
+    <div id="story"></div>
+     <script>
+        let divTitle = document.getElementsByClassName('title-div')[0]
+        let tagP = document.createElement('p')
+        tagP.innerText = 'Insira o nome dos personagens da Estória!'
+        divTitle.appendChild(tagP)
+        let buttonLib = document.getElementById('lib-button')
+        buttonLib.addEventListener('click', makeMadLib)
+        function makeMadLib(){
+            let divStory = document.getElementById("story")
+            let personOne = document.getElementById("person").value
+            let personTwo = document.getElementById("adjective").value
+            let personThree = document.getElementById("noun").value
+            divStory.innerHTML = "O " + personOne + " saiu correndo viu o " + personTwo + " e caiu. " + personThree + " O deu muita rizada." + '<br>' + "E fim!"
+        }
+     </script>
+    </body>
+</html>
