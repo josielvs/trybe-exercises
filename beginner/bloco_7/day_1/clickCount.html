@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<body>
+  <div>
+    <span id ="text"></span>
+  </div>
+  <button id="button_acc">click aqui!</button>
+  <button id="button_reset">Reset</button>
+</body>
+<script>
+  let clickCount = 0
+  let textToDisplay = document.getElementById("text")
+
+  document.getElementById("button_acc")
+          .addEventListener("click", () => textToDisplay.innerHTML = clickCount += 1)
+
+  document.querySelector("#button_reset")
+	  .addEventListener("click", () => textToDisplay.innerHTML = clickCount = 0)
+</script>
+</html>
